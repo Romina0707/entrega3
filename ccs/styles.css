@@ -3,43 +3,114 @@
     padding: 0;
     box-sizing: border-box;
 }
-img svg video{
-    max-width: 100%;
-    display: inline-block;
-}
-.imagenInicio {
-    width: 2000px;
-}
-.redesSociales{
-    text-align: center;
-}
-.iconos
-{
-    text-align: center;
-}
+
 body{
     font-family: "Open Sans", serif;
+    background-color: #fff;
+    font-size: 16px;
+    
 }
-
-h1{
-    color: white;
-    text-align:center;
-}
-
-h2{
-    color: white;
+.contenedor{
+    width:90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
     text-align: center;
-    font-weight: lighter;
+   
 }
 
-h3{ 
-    color:#FFBF6B;
-}
+/* ---------- HEADER ---------- */
 header {
     background-color: #FFBF6B;
     color: white;
+    max-height: 200px;
+}
+header .menu {
+    margin: 20px 0;
+    text-align: right;
+   
 }
 
-footer{
-    background-color: #cecece;
+header .menu a{
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 2px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+
 }
+header .menu a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+header .contenedor-texto { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:-10px 0 20px 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 30px ;
+}
+
+header .contenedor-texto h1
+header .contenedor-texto h2 {
+    color: #fff;
+    margin: 0;
+
+}
+header .contenedor-texto .nombre {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 300;
+}
+header .contenedor-texto .profesion {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 200;
+}
+  /* ---------- CONTENIDO PRINCIPAL---------- */
+
+  .imagen-inicio {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.imagen-inicio img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- FOOTER---------- */
+footer{
+    max-height: 200px;
+}
+
+footer .redes-sociales {
+    background-color: #cecece;
+    padding: 30px 0;
+}
+footer .contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .redes-sociales svg {
+    background-color: #FFBF6B; /* Color de fondo */
+    border-radius: 30%; /* Forma circular */
+    padding: 10px; /* Espaciado interno */
+    width: 40px; /* Ajusta el tamaño total */
+    height: 40px;
+    color: #fff; /* Color del ícono */
+}
+
+footer .redes-sociales .behance:hover { background: #1769ff;}
+footer .redes-sociales .instagram:hover { background: #f77737;}
+footer .redes-sociales .facebook:hover { background: #1877f2;}
+footer .redes-sociales .linkedin:hover { background: #0a66c2;}
