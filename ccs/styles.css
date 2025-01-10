@@ -86,6 +86,153 @@ header .contenedor-texto .profesion {
     display: block;
 }
 
+ span{
+    font-weight: bold;
+    color: #FFBF6B;
+ }
+ .foto-redonda {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    border: 5px solid #FFBF6B; 
+    object-fit: cover;
+    margin: 50px;
+}
+.texto .titulo{
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    color: #FFBF6B;
+}
+.texto p{
+    margin:50px ;
+}
+
+.texto .invitacion{
+    text-decoration: none;
+    /* text-decoration-style: wavy; */
+    /* text-decoration-color: #FFBF6B; */
+    /* color: #FFBF6B; */
+    font-weight: bold;
+}
+
+.galeria .titulo-galeria{
+    font-weight: lighter;
+    color: #FFBF6B;
+    font-size: 25px;
+    margin: 20px;
+}
+.galeria{
+    margin: 20px;
+}
+.contenedorimagenes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.imagenes img {
+    width: calc(30% - 20px);
+    margin: 10px; 
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+
+.imagenes img:hover {
+    transform: scale(1.05); 
+}
+
+.proyectos .trabajos{
+   padding: 60px 0;
+}
+.proyectos .trabajos .contenedor{
+    overflow: hidden;
+}
+.proyectos .titulo-proyecto {
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    color: #FFBF6B;
+    margin: 20px;
+}
+
+.proyectos .contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.proyectos .contenedor-trabajos .trabajos  {
+    width: 23%;
+}
+.proyectos .contenedor-trabajos .trabajos .imagen{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.proyectos .contenedor-trabajos .trabajos img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+    
+}
+.trabajos img:hover {
+    transform: scale(1.05); 
+}
+.proyectos .contenedor-trabajos .trabajos .Descripción{
+    text-align: center;
+}
+.proyectos .contenedor-trabajos .trabajos .Descripción .nombre {
+    font-weight: bold;
+    color: #FFBF6B;
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+.proyectos .contenedor-trabajos .trabajos .Descripción .categoria {
+    font-size: 14px;
+    color: #636363;
+}
+
+.contacto {
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1000px;
+}
+.contacto .titulo{
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    color: #FFBF6B;
+    margin: 20px;
+}
+.contacto .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"],
+.contacto .formulario textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px ;
+    font-size: 20px;
+    
+
+}
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"] {
+    width: 20%;
+    margin-bottom:15px ;
+}
+.contacto .formulario  textarea {
+    width: 100%;
+    
+}
 /* ---------- FOOTER---------- */
 footer{
     max-height: 200px;
