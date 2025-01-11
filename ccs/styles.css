@@ -10,7 +10,7 @@ body{
     font-size: 16px;
     
 }
-.contenedor{
+.contenedor {
     width:90%;
     max-width: 1400px;
     margin: auto;
@@ -196,23 +196,24 @@ header .contenedor-texto .profesion {
     font-size: 14px;
     color: #636363;
 }
-
-.contacto {
-    padding: 60px 0;
-    width: 100%;
-    max-width: 1000px;
+ .contacto {
+    margin: 20px;
+    padding: 40px;
+    
+   
 }
-.contacto .titulo{
-    font-size: 25px;
+.contacto  .titulo-contacto{
     font-weight: lighter;
-    text-align: center;
     color: #FFBF6B;
+    font-size: 25px;
     margin: 20px;
 }
 .contacto .formulario{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+   
+    
 }
 .contacto .formulario input[type="text"],
 .contacto .formulario input[type="email"],
@@ -221,18 +222,37 @@ header .contenedor-texto .profesion {
     border-radius: 5px;
     padding: 15px 20px ;
     font-size: 20px;
-    
-
 }
+
+
 .contacto .formulario input[type="text"],
 .contacto .formulario input[type="email"] {
-    width: 20%;
+    width: 49%;
     margin-bottom:15px ;
 }
 .contacto .formulario  textarea {
     width: 100%;
-    
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
 }
+.contacto .formulario .boton {
+    margin: auto;
+    background: #FFBF6B;
+    color: #fff;
+    border-radius: 3px;
+    border-color:transparent;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+.contacto .formulario .boton:hover{
+    background: #f77737;
+}
+
+
 /* ---------- FOOTER---------- */
 footer{
     max-height: 200px;
