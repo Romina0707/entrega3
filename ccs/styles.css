@@ -281,3 +281,76 @@ footer .redes-sociales .behance:hover { background: #1769ff;}
 footer .redes-sociales .instagram:hover { background: #f77737;}
 footer .redes-sociales .facebook:hover { background: #1877f2;}
 footer .redes-sociales .linkedin:hover { background: #0a66c2;}
+
+
+/* ---------- MEDIA QUERIES---------- */
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%; 
+        padding: 0 10px;
+    }
+
+    header .menu {
+        text-align: center;
+    }
+
+    header .menu a {
+        margin: 0 10px; 
+        font-size: 0.9em;
+    }
+
+    .foto-redonda {
+        width: 150px;
+        height: 150px;
+    }
+
+    .texto .titulo {
+        font-size: 20px;
+    }
+
+    .imagenes img {
+        width: calc(45% - 10px);
+    }
+
+    .proyectos .contenedor-trabajos .trabajos {
+        width: 48%; 
+    }
+
+    .contacto .formulario input[type="text"],
+    .contacto .formulario input[type="email"] {
+        width: 100%; 
+    }
+
+
+@media (max-width: 480px) {
+    header .contenedor-texto {
+        padding: 10px; 
+    }
+
+    header .contenedor-texto h1, 
+    header .contenedor-texto h2 {
+        font-size: 18px; 
+    }
+
+    .galeria .titulo-galeria {
+        font-size: 20px; 
+    }
+
+    .imagenes img {
+        width: calc(100% - 20px); /
+    }
+
+    .proyectos .contenedor-trabajos .trabajos {
+        width: 100%; 
+    }
+
+    .contacto .formulario .boton {
+        width: 100%; 
+    }
+
+    footer .redes-sociales svg {
+        width: 30px; 
+        height: 30px;
+    }
+}
