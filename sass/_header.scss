@@ -1,0 +1,54 @@
+header {
+    background-color: $color-primario;
+    color: $color-secundario;
+    max-height: 200px;
+  
+    .menu {
+      margin: 20px 0;
+      text-align: right;
+  
+      a {
+        margin: 0 20px;
+        color: $color-secundario;
+        padding-bottom: 2px;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        font-size: 1em;
+
+  
+        &:hover {
+          border-bottom: 2px solid $color-secundario;
+        }
+      }
+    }
+  
+    .contenedor-texto {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: -10px 0 20px 0;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: $border-radius;
+      display: inline-block;
+      text-align: center;
+      padding: 5px 30px;
+  
+      h1, h2 {
+        color: $color-secundario;
+        margin: 0;
+      }
+      .nombre {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: $font-light;
+      }
+  
+      .profesion {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 200;
+      }
+
+    }
+  }

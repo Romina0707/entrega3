@@ -1,0 +1,101 @@
+@media (max-width:768px) {
+    .contenedor {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    header {
+      .menu {
+        text-align: center;
+  
+        a {
+          margin: 0 10px;
+          font-size: 0.9em;
+        }
+      }
+    }
+  
+    .foto-redonda {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .texto {
+      .titulo {
+        font-size: 20px;
+      }
+    }
+  
+    .imagenes {
+      img {
+        width: calc(45% - 10px);
+      }
+    }
+  
+    .proyectos {
+      .contenedor-trabajos {
+        .trabajos {
+          width: 48%;
+        }
+      }
+    }
+  
+    .contacto {
+      .formulario {
+        input[type="text"],
+        input[type="email"] {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      .contenedor-texto {
+        padding: 10px;
+  
+        h1,
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  
+    .galeria {
+      .titulo-galeria {
+        font-size: 20px;
+      }
+    }
+  
+    .imagenes {
+      img {
+        width: calc(100% - 20px);
+      }
+    }
+  
+    .proyectos {
+      .contenedor-trabajos {
+        .trabajos {
+          width: 100%;
+        }
+      }
+    }
+  
+    .contacto {
+      .formulario {
+        .boton {
+          width: 100%;
+        }
+      }
+    }
+  
+    footer {
+      .redes-sociales {
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
