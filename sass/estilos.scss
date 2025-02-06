@@ -11,8 +11,11 @@
   
 body {
     font-family: $font-principal;
-    background-color: $color-secundario;
+    background-color: $color-fondo;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   .contenedor {
     width: 90%;
@@ -20,4 +23,5 @@ body {
     margin: auto;
     overflow: hidden;
     text-align: center;
+    flex-grow: 1;
   }

@@ -1,6 +1,8 @@
 //inicio
 .imagen-inicio {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     margin: 0;
     padding: 0;
 
@@ -8,6 +10,58 @@
       width: 100%;
       display: block;
       min-height:100vh ;
+    }
+  }
+  .carrusel-proyectos {
+    background-color: $color-primario;
+    text-align: center;
+    padding: 40px;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+  .carousel-inner {
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  
+    .carousel-inner img {
+      max-height: 400px; 
+      object-fit: cover; 
+    }
+  }
+  
+
+   .cta { 
+    background-color: $color-primario;
+    padding: 40px;
+    text-align: center;
+    color: $color-secundario;
+   }
+   h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    background-color: $color-fondo;
+    color: $color-secundario;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: #f77737;
+      color: $color-fondo;
     }
   }
    //sobre mi
@@ -30,7 +84,7 @@
       font-size: 25px;
       font-weight: $font-light;
       text-align: center;
-      color: $color-primario;
+      color: $color-secundario;
     }
   
     p {
@@ -48,7 +102,7 @@
   
     .titulo-galeria {
       font-weight: lighter;
-      color: $color-primario;
+      color: $color-secundario;
       font-size: 25px;
       margin: 20px;
     }
@@ -80,7 +134,7 @@
   .contenedor {
     .titulo-proyecto {
         font-weight: lighter;
-        color: $color-primario;
+        color: $color-secundario;
         font-size: 25px;
         margin: 20px;
       }
@@ -98,6 +152,7 @@
            .imagen {
             width: 100%;
             margin-bottom: 10px;
+            padding: 5px;
           }
   
            img {
@@ -118,14 +173,14 @@
   
              .nombre {
               font-weight: bold;
-              color: $color-primario;
+              color: $color-secundario;
               font-size: 25px;
               margin-bottom: 3px;
             }
   
              .categoria {
               font-size: 14px;
-              color:$color-primario;
+              color: $color-secundario;
             }
           }
         }
@@ -134,12 +189,19 @@
   }
 //contacto
 .contacto {
-    margin: 20px;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; 
+  min-height: 100vh;
+  text-align: center;
+  padding: 80px;
+
   
     .titulo-contacto {
       font-weight: lighter;
-      color: $color-primario;
+      color: $color-secundario;
       font-size: 25px;
       margin: 20px;
     }
@@ -178,7 +240,7 @@
         margin: auto;
         background: $color-primario;
         color: $color-secundario;
-        border-radius: 3px;
+        border-radius: 50px;
         border-color: transparent;
         padding: 15px 40px;
         cursor: pointer;
